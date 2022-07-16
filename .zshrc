@@ -33,43 +33,45 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins
 plugins=(
-	git
-	zsh-autosuggestions
-  tmux
-  zsh-syntax-highlighting
-  fzf
-  ros
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    tmux
 )
 
 # - Sourcing
 source $ZSH/oh-my-zsh.sh # oh-my-zsh
 source /opt/ros/humble/setup.zsh # ROS
-source /home/pedros235/.cargo/env # RUST
+source /home/pedros235/.cargo/env # RUST Cargo
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF
 
 #=========================================================
 
-# - Enabling VIM Keybinding in shell
+# - Enabling VIM Keybindings in shell
 bindkey -v
 
 
 #=========================================================
 
-# Alias
-alias nv='nvim'
+# - Alias
+
+alias nv='nvim' # short alias to call nvim
+alias nv_config='$HOME/.config/nvim' # alias for nvim config path
 
 # Git
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m'
-alias gp='git push'
+alias gps='git push'
+alias gpl='git pull'
 
-# - dotfiles config
+# - dotfiles git bare repo config 
 alias config='/usr/bin/git --git-dir=$HOME/code/github/dotfiles/ --work-tree=$HOME'
+
 
 #=========================================================
 
-# ROS Setup
+# ROS2 Setup
 # argcomplete for ros2 & colcon
 eval "$(register-python-argcomplete3 ros2)"
 eval "$(register-python-argcomplete3 colcon)"
