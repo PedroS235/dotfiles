@@ -56,7 +56,7 @@ bindkey -v
 # - Alias
 
 alias nv='nvim' # short alias to call nvim
-alias nv_config='$HOME/.config/nvim' # alias for nvim config path
+alias nv_config='cd $HOME/.config/nvim' # alias for nvim config path
 
 # Git
 alias gs='git status'
