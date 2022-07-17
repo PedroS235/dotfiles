@@ -7,6 +7,7 @@
 -- Requirements
 require("settings")
 require("keymaps")
+require("impatient")
 require("plugins")
 require("colorschemes")
 require("auto_completion")
@@ -20,3 +21,5 @@ require("nvim_tree")
 require("toggle_cli")
 require("lualine_cfg")
 require("indentline_cfg")
+require("bufferline_config")
+-- require("alpha_config") -- nice but not useful

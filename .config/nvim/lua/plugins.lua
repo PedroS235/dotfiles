@@ -71,7 +71,7 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     })
-    use("p00f/nvim-ts-rainbow")
+    use("p00f/nvim-ts-rainbow") -- brackets coloring
     use("nvim-treesitter/playground")
 
     -- Themes
@@ -113,8 +113,11 @@ return packer.startup(function(use)
     use("windwp/nvim-autopairs") -- auto closing of ()[]{}
     use("kyazdani42/nvim-tree.lua") -- File explorer tree
     use("akinsho/toggleterm.nvim") -- Allows to open a cli window when inside neovie
-    use("lukas-reineke/indent-blankline.nvim")
+    use("lukas-reineke/indent-blankline.nvim") -- add identation guides
+    use("akinsho/bufferline.nvim") -- Improves the tabs
+    use("goolord/alpha-nvim") -- startup gui
 
+    use("lewis6991/impatient.nvim") -- speeds up the process of loading plugins
     -------------------------------------------------------------------------
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

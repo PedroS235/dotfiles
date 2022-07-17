@@ -68,6 +68,8 @@ alias gpl='git pull'
 # - dotfiles git bare repo config 
 alias config='/usr/bin/git --git-dir=$HOME/code/github/dotfiles/ --work-tree=$HOME'
 
+alias get_themes='bash -c "$(wget -qO- https://git.io/vQgMr)"'
+
 
 #=========================================================
 
