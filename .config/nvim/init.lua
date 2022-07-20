@@ -7,8 +7,8 @@
 -- Requirements
 require("settings")
 require("keymaps")
-require("impatient")
 require("plugins")
+require("impatient")
 require("colorschemes")
 require("auto_completion")
 require("lsp")
