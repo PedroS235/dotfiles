@@ -1,0 +1,15 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
+[user]
+	name = Pedro Soares
+	email = pmbs.123@gmail.com
+[credential "https://gitlab.espace2001.lu"]
+	helper = 
+	helper = !/usr/bin/glab auth git-credential
